@@ -1,0 +1,11 @@
+<h1 class="text-center" mat-dialog-title>{{data.city}}</h1>
+<div mat-dialog-content>   
+    <agm-map id="capture-city-map" [latitude]="this.lat" [longitude]="this.lng" [zoom]="this.zoom">
+      <agm-marker [markerDraggable]="true" [latitude]="this.lat" [longitude]="this.lng"></agm-marker>
+    </agm-map>
+</div>
+<div mat-dialog-actions>
+    <button mat-button mat-dialog-close>Close</button>
+    <p class="text-muted small">Please click outside of modal after clicking close button</p>
+</div>
+

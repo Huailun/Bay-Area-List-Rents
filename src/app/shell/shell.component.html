@@ -1,0 +1,29 @@
+﻿<div class="card">
+    <img class="image-fluid w-100" src="../../assets/Image/san-francisco-skyline-1600x535-1.jpg"
+    style="max-height:200px;">
+    <div class="card-header">
+        {{pageTitle}}
+    </div>
+    <div class="card-body">
+      <div class="container-fluid">
+        <div *ngIf="!appService.username">
+            <div class="text-center">Developed by:</div>
+            <div class="text-center">
+              <h3>Ellen Liu</h3>
+            </div>
+      
+            <div class="text-center">
+              <a href="https://www.linkedin.com/in/ellen-liu-b27ab883/" target="_blank"><span class="text-center">@Linkedin</span></a><br>
+              <a href="https://github.com/Huailun/Bay-Area-list-rents" target="_blank"><span class="text-center">@GitHub</span></a>
+            </div>
+        </div>
+        <div *ngIf="appService.username" class="col-12">
+            <p class="welcome">Welcome {{ appService.username }}, <span (click)="logout()" class="logout text-primary">logout here</span></p>
+            <p class="text-center lead">
+              List rent refers to the advertised rents for available rental housing and serves as a measure of housing costs for new households moving into a neighborhood, city, county or region.
+            </p>  
+            <p class="text-center text-muted">DATA SOURCE: real Answers (1994 &ndash; 2015)</p>
+        </div>     
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,10 @@
+
+.logout {
+    cursor: pointer;
+    text-transform: lowercase;
+  }
+  
+  .welcome {
+    text-transform: capitalize;
+  }
+  
