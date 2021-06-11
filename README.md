@@ -19,7 +19,12 @@ Run `ng serve` for a dev server.
 Navigate to `http://localhost:4200/`. 
 Application will run on [localhost:4200](http://localhost:4200)
 
-Enter any username and password to login
+* Enter any username and password to login
+* Users can sort any columns of the table.
+* User can use pagination and choose how many rows to dislay in the table.
+* User can use slider to filter data by year or enter text/number in "Filter" to filter data
+* Click view map to view the map by city names.
+* Click on log out, will return to log in page.
 
 ## Running unit tests
 
