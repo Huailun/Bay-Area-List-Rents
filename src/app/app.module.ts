@@ -69,7 +69,7 @@ const ROUTES = [
     MatButtonModule,
     MatDialogModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyDU-g0pdYjL9l78JraBsk6FoL9OMpd7o64',
+      apiKey: '',
       libraries: ['places']
     })
 
